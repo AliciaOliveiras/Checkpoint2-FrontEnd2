@@ -136,4 +136,16 @@ buttonAddTask.addEventListener('click',response =>{
     inputIDElement.value = ""
 })
 
+//logout (precisando consertar)
 
+let logout = document.querySelector('#closeApp')
+
+logout.addEventListener('click', response => {
+
+    localStorage.clear()
+
+    alert('Sessão encerrada.')
+
+    window.location = '../pages/index.html'
+    }
+)
